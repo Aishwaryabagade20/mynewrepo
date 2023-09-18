@@ -20,6 +20,9 @@ public class test1 {
 	public void run() {
 		
 		System.out.println("Hello i am using testng here");
+		System.out.println("Hello 2");
+		System.out.println("Hello 3");
+		System.out.println("Hello 4");
 	//	Assert.assertTrue(false);
 	}
 	
