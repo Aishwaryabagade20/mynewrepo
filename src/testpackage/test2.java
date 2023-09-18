@@ -9,6 +9,9 @@ public class test2 {
 	public void run2() {
 		
 		System.out.println("This is second test");
+		
+		System.out.println("I am in test 2 class");
+		
 	}
 	
 	@Test

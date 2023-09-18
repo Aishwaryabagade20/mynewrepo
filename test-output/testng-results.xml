@@ -1,137 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-17T15:27:19 IST" name="Suite" finished-at="2023-09-17T15:27:20 IST" duration-ms="203">
+  <suite started-at="2023-09-18T18:20:52 IST" name="Default suite" finished-at="2023-09-18T18:20:52 IST" duration-ms="119">
     <groups>
-      <group name="Regression">
-        <method signature="test2.run2()[pri:0, instance:testpackage.test2@3e8c3cb]" name="run2" class="testpackage.test2"/>
-        <method signature="test4.carkia()[pri:0, instance:testpackage.test4@563f38c4]" name="carkia" class="testpackage.test4"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-09-17T15:27:19 IST" name="Regression" finished-at="2023-09-17T15:27:20 IST" duration-ms="94">
-      <class name="testpackage.test4">
-        <test-method is-config="true" signature="prereuisite()[pri:0, instance:testpackage.test4@563f38c4]" started-at="2023-09-17T15:27:19 IST" name="prereuisite" finished-at="2023-09-17T15:27:19 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prereuisite -->
-        <test-method signature="carkia()[pri:0, instance:testpackage.test4@563f38c4]" started-at="2023-09-17T15:27:20 IST" name="carkia" finished-at="2023-09-17T15:27:20 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- carkia -->
-        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test4@563f38c4]" started-at="2023-09-17T15:27:20 IST" name="befmethod" finished-at="2023-09-17T15:27:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befmethod -->
-        <test-method is-config="true" signature="aftmethod()[pri:0, instance:testpackage.test4@563f38c4]" started-at="2023-09-17T15:27:20 IST" name="aftmethod" finished-at="2023-09-17T15:27:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftmethod -->
-      </class> <!-- testpackage.test4 -->
+    <test started-at="2023-09-18T18:20:52 IST" name="Default test" finished-at="2023-09-18T18:20:52 IST" duration-ms="119">
       <class name="testpackage.test1">
-        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="befmethod" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befmethod -->
-        <test-method signature="logincarloan(java.lang.String,java.lang.String)[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="logincarloan" finished-at="2023-09-17T15:27:20 IST" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qaclickacademy.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="logincarloan(java.lang.String,java.lang.String)[pri:0, instance:testpackage.test1@3c77d488]" started-at="2023-09-18T18:20:52 IST" name="logincarloan" finished-at="2023-09-18T18:20:52 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'url' is required by @Test on method logincarloan but has not been marked @Optional or defined
+in C:\Users\AISHWARYA\AppData\Local\Temp\testng-eclipse--1241734291\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'url' is required by @Test on method logincarloan but has not been marked @Optional or defined
+in C:\Users\AISHWARYA\AppData\Local\Temp\testng-eclipse--1241734291\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logincarloan -->
-        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="befmethod" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test1@3c77d488]" started-at="2023-09-18T18:20:52 IST" name="befmethod" finished-at="2023-09-18T18:20:52 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- befmethod -->
-        <test-method signature="run()[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="run" finished-at="2023-09-17T15:27:20 IST" duration-ms="2" status="PASS">
+        <test-method signature="run()[pri:0, instance:testpackage.test1@3c77d488]" started-at="2023-09-18T18:20:52 IST" name="run" finished-at="2023-09-18T18:20:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run -->
-        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="befmethod" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befmethod -->
-        <test-method signature="run1()[pri:0, instance:testpackage.test1@6340e5f0]" started-at="2023-09-17T15:27:20 IST" name="run1" finished-at="2023-09-17T15:27:20 IST" duration-ms="2" status="PASS">
+        <test-method signature="run1()[pri:0, instance:testpackage.test1@3c77d488]" started-at="2023-09-18T18:20:52 IST" name="run1" finished-at="2023-09-18T18:20:52 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- run1 -->
+        <test-method is-config="true" signature="befmethod()[pri:0, instance:testpackage.test1@3c77d488]" started-at="2023-09-18T18:20:52 IST" name="befmethod" finished-at="2023-09-18T18:20:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- befmethod -->
       </class> <!-- testpackage.test1 -->
-      <class name="testpackage.test2">
-        <test-method signature="run2()[pri:0, instance:testpackage.test2@3e8c3cb]" started-at="2023-09-17T15:27:20 IST" name="run2" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- run2 -->
-        <test-method is-config="true" signature="aftclass()[pri:0, instance:testpackage.test2@3e8c3cb]" started-at="2023-09-17T15:27:20 IST" name="aftclass" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftclass -->
-      </class> <!-- testpackage.test2 -->
-    </test> <!-- Regression -->
-    <test started-at="2023-09-17T15:27:20 IST" name="Smoke" finished-at="2023-09-17T15:27:20 IST" duration-ms="24">
-      <class name="testpackage.test3">
-        <test-method is-config="true" signature="bsuite()[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:19 IST" name="bsuite" finished-at="2023-09-17T15:27:19 IST" duration-ms="13" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bsuite -->
-        <test-method is-config="true" signature="befclass()[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="befclass" finished-at="2023-09-17T15:27:20 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- befclass -->
-        <test-method signature="Mobilelogin(java.lang.String,java.lang.String)[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="Mobilelogin" data-provider="getData" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Aishwaya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mobilelogin -->
-        <test-method signature="Mobilelogin(java.lang.String,java.lang.String)[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="Mobilelogin" data-provider="getData" finished-at="2023-09-17T15:27:20 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Aditya]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[6789]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Mobilelogin -->
-        <test-method signature="carloan()[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="carloan" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- carloan -->
-        <test-method signature="carkia()[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="carkia" finished-at="2023-09-17T15:27:20 IST" depends-on-methods="testpackage.test3.carloan" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- carkia -->
-        <test-method is-config="true" signature="basuite()[pri:0, instance:testpackage.test3@2b30a42c]" started-at="2023-09-17T15:27:20 IST" name="basuite" finished-at="2023-09-17T15:27:20 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basuite -->
-      </class> <!-- testpackage.test3 -->
-    </test> <!-- Smoke -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
