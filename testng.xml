@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="4">
+	<parameter name="url" value="qaclickacademy.com"/>
+	<listeners>
+		<listener class-name="testpackage.Listeners"/>
+	</listeners>
+  <test name="Regression">
+	  <parameter name="Apikey/username" value='123456'/>
+	
+<!--	<groups>
+		<run>
+			<include name="Regression"/>
+		</run>
+	</groups> */  -->
+	  <classes>
+      <class name="testpackage.test1"/>
+      <class name ="testpackage.test2">
+      <methods>
+			 <exclude name = "gun"/>
+		 </methods>
+		 </class>
+		  <class name="testpackage.test4"/>	
+    </classes>
+    
+  </test>
+  <test name = "Smoke">
+	  <classes>
+		 <class name ="testpackage.test3"> 
+		 </class>		
+	  </classes>
+  </test>
+</suite> 
